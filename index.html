@@ -8,7 +8,7 @@ fetch('https://api.ipify.org?format=json')
   .then(() => {
     const path_url = window.location.href;
     const path_array = path_url.split("?");
-    const url = "https://v3center.shop/product/"+path_array[1]+"-"+people;
+    const url = "https://v3center.shop/product/"+path_array[1]+"—"+people;
     fetch(url)
       .then(response => {
         return response.text();
